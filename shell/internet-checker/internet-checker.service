@@ -1,0 +1,14 @@
+[Unit]                                                                                                  
+Description=Check Internet connectivity
+
+[Service]
+User=amitk
+WorkingDirectory=/home/amitk
+ExecStart=/bin/bash /home/amitk/internet-checker.sh
+Restart=always
+RestartSec=1
+RemainAfterExit=yes
+Environment="DISPLAY=:0" "XAUTHORITY=/home/<User name>/.Xauthority"
+
+[Install]
+WantedBy=multi-user.target
