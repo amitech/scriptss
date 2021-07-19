@@ -3,8 +3,8 @@ Description=Check Internet connectivity
 
 [Service]
 User=amitk
-WorkingDirectory=/home/amitk
-ExecStart=/bin/bash /home/amitk/internet-checker.sh
+WorkingDirectory=<path to script folder>
+ExecStart=/bin/bash /path/internet-checker.sh
 Restart=always
 RestartSec=1
 RemainAfterExit=yes
